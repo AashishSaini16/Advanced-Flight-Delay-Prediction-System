@@ -43,6 +43,9 @@ The dataset is the "2022 US domestic flight data for delay prediction" from Kagg
 ![ROC Curve](https://raw.githubusercontent.com/AashishSaini16/Advanced-Flight-Delay-Prediction-System/main/ROC%20Curve.PNG)
 
 - Prediction: Use widget for user inputs and output delay forecasts.
+
+![Inference Demo](https://github.com/AashishSaini16/Advanced-Flight-Delay-Prediction-System/blob/main/demo.PNG)
+
 - Interpretability: Apply SHAP to visualize feature impacts.
 
 ![SHAP Values](https://raw.githubusercontent.com/AashishSaini16/Advanced-Flight-Delay-Prediction-System/main/SHAP%20Values.PNG)
