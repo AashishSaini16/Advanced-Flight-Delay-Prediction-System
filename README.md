@@ -1,6 +1,6 @@
 # Advanced Flight Delay Prediction System
 
-This repository contains a Jupyter notebook for developing a neural network model to predict flight delays using historical aviation data. The project uses embeddings for categorical features, SHAP for interpretability, and an interactive widget for real-time predictions, demonstrating preprocessing, model training, evaluation, and deployment-ready insights.
+This repository contains a Jupyter notebook for developing a neural network model to predict flight delays using historical aviation data. The project uses embeddings for categorical features, SHAP for interpretability, and an interactive widget for real-time predictions, demonstrating preprocessing, model training, evaluation, and deployment-ready insights. From a business perspective, this system can help airlines minimize delay-related costs (estimated at $40B+ annually industry-wide), optimize scheduling, reduce passenger compensation claims, and enhance operational efficiency. Potentially cutting delay impacts by 15-20% through proactive decision-making.
 
 ### Dataset Source
 
@@ -10,9 +10,9 @@ The dataset is the "2022 US domestic flight data for delay prediction" from Kagg
 
 - Data Preprocessing: Embed categorical variables, normalize numericals, engineer cyclical features (sin/cos for time/month).
 - Model Development: Feedforward neural network with Keras/TensorFlow, combining embeddings and dense layers for binary classification (delay >15 mins).
-- Training & Evaluation: Adam optimizer, BCE loss, metrics like AUC (0.97), precision-recall curves, confusion matrix.
+- Training & Evaluation: Adam optimizer, BCE loss, metrics like 97.94% accuracy, 97.92% AUC, precision-recall curves, confusion matrix.
 - Interactive Prediction: Jupyter widget for inputting flight details and getting delay probability/label.
-- Interpretability: SHAP values to explain predictions, highlighting top features like departure delays and seasonal effects.
+- Interpretability: SHAP values to explain predictions, highlighting top features like departure delays and seasonal effects. Enabling airlines to identify actionable insights for route optimization and resource allocation.
 
 ### Technologies Used
 
@@ -26,7 +26,7 @@ The dataset is the "2022 US domestic flight data for delay prediction" from Kagg
 
 ### Project Workflow
 
-- Data Loading: Import and preprocess flight dataset.
+- Data Loading: Import and preprocess flight dataset (7M+ records).
 - Feature Engineering: Handle categoricals with embeddings, scale numericals.
 - Model Building: Define architecture with concatenation, batch norm, dropout.
 
@@ -36,16 +36,16 @@ The dataset is the "2022 US domestic flight data for delay prediction" from Kagg
 
 ![Training Curves](https://raw.githubusercontent.com/AashishSaini16/Advanced-Flight-Delay-Prediction-System/main/Training%20Curves.PNG)
 
-- Evaluation: Compute test metrics, generate confusion matrix, PR/ROC curves.
+- Evaluation: Compute test metrics (e.g., 97.94% accuracy, 97.92% AUC), generate confusion matrix, PR/ROC curves.
 
 ![Confusion Matrix](https://raw.githubusercontent.com/AashishSaini16/Advanced-Flight-Delay-Prediction-System/main/Confusion%20Matrix.PNG)  
 ![Precision-Recall Curve](https://raw.githubusercontent.com/AashishSaini16/Advanced-Flight-Delay-Prediction-System/main/Precision-Recall%20Curve.PNG)  
 ![ROC Curve](https://raw.githubusercontent.com/AashishSaini16/Advanced-Flight-Delay-Prediction-System/main/ROC%20Curve.PNG)
 
-- Prediction: Use widget for user inputs and output delay forecasts.
+- Prediction: Use widget for user inputs and output delay forecasts. Ideal for real-time airline ops dashboards.
 
-![Inference Demo](https://github.com/AashishSaini16/Advanced-Flight-Delay-Prediction-System/blob/main/demo.PNG)
+![Inference Demo](https://raw.githubusercontent.com/AashishSaini16/Advanced-Flight-Delay-Prediction-System/main/demo.PNG)
 
-- Interpretability: Apply SHAP to visualize feature impacts.
+- Interpretability: Apply SHAP to visualize feature impacts, supporting business decisions like targeting high-risk factors to improve on-time performance.
 
 ![SHAP Values](https://raw.githubusercontent.com/AashishSaini16/Advanced-Flight-Delay-Prediction-System/main/SHAP%20Values.PNG)
